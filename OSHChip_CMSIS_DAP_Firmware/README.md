@@ -36,7 +36,8 @@ There are two versions, that differ only in the default drive name that shows up
 4. Drag and drop (or copy) one of the above two .bin files to the CRP DISABLD drive.
 5. Disconnect USB cable, wait a second, and re-connect without holding the reset button.
 6. If this is the first time this is being done, then drivers must be installed, and
-   can take a few minutes while your operating systen retrieves them.
+   can take a few minutes while your operating systen retrieves them. In Windows, the
+   driver install pop-up should show something like this: ![Windows_Driver_Installation](Windows_Driver_Installation.png)
 7. When complete, it will show up as
   * A drive named "OSHChip 1.0" or "MBED" (depending on the firmware file you loaded)
   * In the device manager (Windows), under the heading:
