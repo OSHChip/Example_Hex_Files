@@ -20,15 +20,22 @@ There are two versions, that differ only in the default drive name that shows up
 ### The Firmware files
 
 * **lpc11u35_nrf51822_if_reports_OSHChip_1.0.bin**  
+  Md5Sum: 4e8e75e39c4df5c8d747cf7bd3480122   
   This is the default firmware that OSHChip_CMSIS_DAP is shipped with.
   When OSHChip_CMSIS_DAP is connected to your computer, it will show up
   in the list of drives as "OSHChip 1.0"
 * **lpc11u35_nrf51822_if_reports_MBED.bin**  
+  Md5Sum: 54e64e75ae196dfe09e5174d22e201d4  
   This is the alternative firmware that you can load into OSHChip_CMSIS_DAP
   With this firmware, when OSHChip_CMSIS_DAP is connected to your computer,
   it will show up in the list of drives as "MBED"
 
 ### How to install the Firmware
+
+This procedure is only needed if you want to change from the default
+firmware that is pre-installed in your OSHChip_CMSIS_DAP_V1.0 programmer/debugger.
+This could be because you want it to show up as "MBED" or because an update
+to the firmware is available.
 
 1. Hold the reset button while connecting the USB cable
 2. Should show up as a drive with the name "CRP DISABLD" (yes, missing an E)
@@ -37,7 +44,7 @@ There are two versions, that differ only in the default drive name that shows up
 5. Disconnect USB cable, wait a second, and re-connect without holding the reset button.
 6. If this is the first time this is being done, then drivers must be installed, and
    can take a few minutes while your operating systen retrieves them. In Windows, the
-   driver install pop-up should show something like this: ![Windows_Driver_Installation](Windows_Driver_Installation.png)
+   driver install pop-up should show something like this: ![](Windows_Driver_Installation.png =500x)
 7. When complete, it will show up as
   * A drive named "OSHChip 1.0" or "MBED" (depending on the firmware file you loaded)
   * In the device manager (Windows), under the heading:
@@ -49,4 +56,16 @@ There are two versions, that differ only in the default drive name that shows up
       obvious that they are related to the CMSIS-DAP board:
       * "HID-compliant Device"
       * "USB Input Device"
+
+### Serial port driver for Windows
+
+*Only for Windows*
+
+After connecting an OSHChip_CMSIS_DAP_V1.0 to your computer for the first time,
+and the automatic driver process has completed, an additional driver needs to be
+installed. [mbed serial driver installation](https://developer.mbed.org/handbook/Windows-serial-configuration)  
+(this needs to be done regardless of which of the two firmware images you have installed)
+
+
+
 
