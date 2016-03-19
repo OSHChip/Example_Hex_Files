@@ -87,6 +87,10 @@ extern "C" {
 #define	LED_GREEN	(p5)
 #define	LED_BLUE	(p3)
 
+#define	RED_LED		(p8)
+#define	GREEN_LED	(p5)
+#define	BLUE_LED	(p3)
+
 #define	LED1		(LED_RED)				// These are used in board.c, so make a best effort
 #define	LED2		(LED_GREEN)
 #define	LED3		(LED_BLUE)
