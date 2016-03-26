@@ -22,10 +22,10 @@ have one:
 Basically, what is going on here is that you tell the mbed system that you are using the nRF51-DK board
 (from Nordic Semiconductor) that uses the same processor chip as OSHChip. Then as you can see in the
 example project, there is a replacement header file that is OSHChip specific, and a trivial
-initialization function that assigns the UART to pins 1 and 2 of OSHChip.
+initialization function that re-assigns the UART to pins 1 and 2 of OSHChip.
 
 The resulting HEX file is surprisingly large (if you save it to a normal disk drive, you will see that
-it is 320 KB. This is because with mbed, the hex file always includes the *SoftDevice* for Blue Tooth
+it is 320 KB. This is because with mbed, the hex file always includes the *SoftDevice* for Bluetooth
 Low Energy (BLE), regardless of whether you are using BLE or not. This means that download time to
 OSHChip is a few seconds longer than if the SoftDevice was not part of the HEX file.
 
