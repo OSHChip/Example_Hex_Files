@@ -3,11 +3,6 @@
 The long term plan is to have OSHChip registered as an mbed enabled platform, but until that is done,
 the following describes how to get started with mbed and OSHChip, using a simple **blinky** example.
 
-Basically, what is going on here is that you tell the mbed system that you are using the nRF51-DK board
-(from Nordic Semiconductor) that uses the same processor chip as OSHChip. Then as you can see in the
-example project, there is a replacement header file that is OSHChip specific, and a trivial
-initialization function that assigns the UART to pins 1 and 2 of OSHChip.
-
 1. To try it out, you should go to the Classic mbed web site and create an account if you don't already
 have one:  
  https://developer.mbed.org/
@@ -23,6 +18,11 @@ have one:
    step 5 above)
 9. Save this to the USB drive for the OSHChip_CMSIS_DAP. This should load the program into the Flash
    memory in OSHChip, and then the program should run and blink the 3 on-board LEDs.
+
+Basically, what is going on here is that you tell the mbed system that you are using the nRF51-DK board
+(from Nordic Semiconductor) that uses the same processor chip as OSHChip. Then as you can see in the
+example project, there is a replacement header file that is OSHChip specific, and a trivial
+initialization function that assigns the UART to pins 1 and 2 of OSHChip.
 
 The resulting HEX file is surprisingly large (if you save it to a normal disk drive, you will see that
 it is 320 KB. This is because with mbed, the hex file always includes the *SoftDevice* for Blue Tooth
