@@ -9,7 +9,8 @@ have one:
 2. After logging in, select **Compiler** in the top right corner.
 3. Click on the **Import** button
   * If import complains *You haven't added any platforms to your account yet*,
-  go to the main site and search for **nRF51-DK** platform and choose to add it to your compiler.
+  go to the main site and search  
+  for the **nRF51-DK** platform and choose to add it to your compiler.
   Once added, return to the compiler, and Import should now be functional.
 4. Select the program tab, and type **OSHChip_Blinky** in the search box, and click Search
 5. Double click on the result line, select "import as program" and either accept or modify the import
